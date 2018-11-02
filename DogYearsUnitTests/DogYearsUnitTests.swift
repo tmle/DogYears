@@ -35,6 +35,11 @@ class DogYearsUnitTests: XCTestCase {
         let result = calc.evaluate(op: "*", arg1: 3.0, arg2: 5.0)
         XCTAssert(result == 15.0, "Calculator multiplication operation failed")
     }
+    
+    func testDivision() {
+        let result = calc.evaluate(op: "/", arg1: 15.0, arg2: 3.0)
+        XCTAssert(result == 5.0, "Calculator division operation failed")
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
